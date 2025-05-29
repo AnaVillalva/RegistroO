@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Formulario de Registración</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Formulario de Registración</h1>
+  <form id="registroForm">
+    <label>Apellido: <input type="text" id="apellido" required></label><br>
+    <label>Nombre: <input type="text" id="nombre" required></label><br>
+    <label>DNI: <input type="text" id="dni" required></label><br>
+    <label>Fecha de Nacimiento: <input type="date" id="fechaNacimiento" required></label><br>
+    <label>Email: <input type="email" id="email" required></label><br>
+    <button type="button" onclick="validarFormulario()">Validar</button>
+  </form>
+
+  <h2>Preguntas personales</h2>
+  <button onclick="hacerPreguntas()">Responder 3 preguntas</button>
+  <div id="respuestas"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
